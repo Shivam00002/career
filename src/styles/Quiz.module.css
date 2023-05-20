@@ -1,0 +1,23 @@
+/* styles/Quiz.module.css */
+.quizContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .questionContainer {
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .highlighted {
+    background-color: #a0c3ff;
+  }
+  
