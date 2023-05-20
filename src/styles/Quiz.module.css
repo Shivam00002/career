@@ -1,8 +1,6 @@
 /* styles/Quiz.module.css */
 .quizContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
   }
   
   .questionContainer {
@@ -18,6 +16,7 @@
   }
   
   .highlighted {
-    background-color: #a0c3ff;
+   background-color: green;
+   color: white;
   }
   

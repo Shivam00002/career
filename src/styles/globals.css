@@ -1,3 +1,73 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
+
+#btn-style {
+  height: 6px;
+  width: 6px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+}
+#btn-style:hover {
+  background-color: teal;
+  color: white;
+}
+
+.option-div {
+  display: flex;
+  gap: 9px;
+  margin-left: 24px;
+}
+
+.box {
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 5px;
+  height: auto;
+  text-align: left;
+}
+.pagination-btn {
+  display: flex;
+  gap: 20px;
+}
+
+.pagination-btn button:hover {
+  background-color: teal;
+  color: white;
+  border: 0px;
+}
+
+.pagination-btn button {
+  width: 8%;
+  height: 38px;
+  cursor: pointer;
+}
+
+.progress {
+  width: 70%;
+}
+#prog {
+  width: 40%;
+  margin-left: 61%;
+  margin-top: -30px;
+}
+
+.pagination {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.pages {
+  margin-left: 80%;
+  margin-top: -9px;
+}
+
+.main {
+  width: 90%;
+  margin: auto;
+}
