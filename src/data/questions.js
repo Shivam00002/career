@@ -8,7 +8,7 @@ const questions = [
       },
       {
         id: 2,
-        question: '2. Which country is known as the Land of the Rising Sun?',
+        question: '2. who are you',
         options:[1, 2, 3, 4,5],
         correctAnswer: 1,
       },

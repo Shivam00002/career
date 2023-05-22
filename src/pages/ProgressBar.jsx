@@ -7,9 +7,13 @@ console.log(props.currentPage)
   
 
   return (
+
+    
+
     <div id="prog" > 
     <div >
       <div
+      className="progress-line"
         style={{
           width: `${props.progress}%`,
           height: "5px",
@@ -21,7 +25,7 @@ console.log(props.currentPage)
     </div>
 
     <div className="pages">
-    {`Page ${props.currentPage} Off 6`}
+    {`Page ${props.currentPage} Off ${props.totalPages}`}
     </div>
 
    

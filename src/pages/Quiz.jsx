@@ -42,6 +42,14 @@ const Quiz = () => {
 
   const startIndex = (currentPage - 1) * 5;
   const endIndex = startIndex + 5;
+ 
+  
+//total pages
+const questionsPerPage = 5;
+const totalPages = Math.ceil(questions.length / questionsPerPage);
+console.log("Total Pages:", totalPages);
+
+
   const paginatedQuestions = questions.slice(startIndex, endIndex);
 
   const isNextButtonDisabled = paginatedQuestions.some((question) => {
@@ -59,7 +67,7 @@ const Quiz = () => {
       <div className={styles.quizContainer}>
         {paginatedQuestions.map((question) => (
           <div key={question.id} className="box">
-            <p>{question.question}</p>
+            <p className="question">{question.question}</p>
 
             <div className="option-div">
               {question.options.map((option, index) => {
@@ -87,7 +95,11 @@ const Quiz = () => {
             </div>
           </div>
         ))}
+
+
+  
         <div className="pagination">
+
           <div className="pagination-btn">
             <button
               disabled={currentPage === 1}
@@ -97,7 +109,7 @@ const Quiz = () => {
               Previous
             </button>
             <button
-              disabled={isNextButtonDisabled}
+            disabled={isNextButtonDisabled || currentPage === totalPages}
               onClick={handleNextPage}
               className={styles.paginationButton}
             >
@@ -105,8 +117,9 @@ const Quiz = () => {
             </button>
           </div>
         </div>
-      </div>
-      <ProgressBar currentPage={currentPage} progress={progress} />
+        </div>
+        <ProgressBar totalPages={totalPages} currentPage={currentPage} progress={progress} />
+    
     </>
   );
 };

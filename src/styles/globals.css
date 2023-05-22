@@ -52,8 +52,12 @@
   width: 70%;
 }
 #prog {
-  width: 40%;
-  margin-left: 61%;
+  display: grid;
+  grid-column: repeat(2, 1fr);
+  width: 50%;
+  height: auto;
+  align-items: right;
+  margin-left: 50%;
   margin-top: -30px;
 }
 
@@ -70,4 +74,83 @@
 .main {
   width: 90%;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 90%;
+    margin-right: 25px;
+  }
+
+  .option-div {
+    display: flex;
+    gap: 20px;
+    margin-left: 24px;
+  }
+
+  .pages {
+    margin-left: 30%;
+    margin-top: -9px;
+  }
+
+  .progress {
+    width: 70%;
+    border: 2px solid red;
+  }
+
+  .pagination-btn button {
+    width: 12px;
+    margin-top: 12px;
+    height: 7px;
+  }
+
+  .pagination-btn button:hover {
+    background-color: teal;
+    color: white;
+    border: 0px;
+  }
+
+  /* .pagination-btn button {
+    width: 8%;
+    height: 38px;
+    cursor: pointer;
+  }
+
+  .pagination {
+    border: 2px solid green;
+    width: 25%;
+    height: 22px;
+    margin-left: 45px;
+  }
+
+  .pagination button {
+    border: 2px solid goldenrod;
+  }
+ */
+
+  .pagination {
+    width: 45%;
+    height: 44px;
+    margin: auto;
+    margin-top: 35px;
+  }
+
+  .pagination button {
+    border: 1px solid gray;
+    width: 62px;
+    height: 33px;
+    border-radius: 10px;
+  }
+
+  #prog {
+    width: 95%;
+    margin: auto;
+    margin-top: -60px;
+  }
+
+  .pages {
+    margin-left: 30%;
+    margin-top: -9px;
+    margin-left: 71%;
+  }
 }
