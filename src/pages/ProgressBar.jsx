@@ -13,10 +13,10 @@ console.log(props.currentPage)
     <div id="prog" > 
     <div >
       <div
-      className="progress-line"
+      id="progress-line"
         style={{
           width: `${props.progress}%`,
-          height: "5px",
+          height: "3px",
           background:   "rgb(38, 133, 243)",
           transition: "width 0.2s",
           borderRadius : "7px"

@@ -104,14 +104,15 @@ console.log("Total Pages:", totalPages);
             <button
               disabled={currentPage === 1}
               onClick={handlePreviousPage}
-              className="border bg-gray-400 text-black p-2"
+           className="paginationButton "
             >
               Previous
             </button>
             <button
             disabled={isNextButtonDisabled || currentPage === totalPages}
               onClick={handleNextPage}
-              className={styles.paginationButton}
+              className={`paginationButton ${!isNextButtonDisabled && currentPage !== totalPages ? 'active' : ''}`}
+      
             >
               Next
             </button>
@@ -125,3 +126,4 @@ console.log("Total Pages:", totalPages);
 };
 
 export default Quiz;
+
