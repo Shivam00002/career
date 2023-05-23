@@ -6,6 +6,7 @@ const questions = [
         options: [1, 2, 3, 4,5],
         correctAnswer: 0,
       },
+      
       {
         id: 2,
         question: '2. who are you',
