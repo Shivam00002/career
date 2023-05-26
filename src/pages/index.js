@@ -18,6 +18,7 @@ export default function Home() {
   <main className='main'>
     <div >
       <Quiz/>
+     
     </div>
 
   </main>
