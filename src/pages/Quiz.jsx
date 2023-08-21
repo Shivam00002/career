@@ -11,6 +11,7 @@ const Quiz = () => {
   useEffect(() => {
     // Retrieve the selected answers from session storage
     const storedAnswers = sessionStorage.getItem("selectedAnswers");
+
     if (storedAnswers) {
       setSelectedAnswers(JSON.parse(storedAnswers) || []);
     }
@@ -23,6 +24,7 @@ const Quiz = () => {
     );
 
     const answer = { questionId, optionIndex };
+
     const newAnswers = [...updatedAnswers, answer];
     setSelectedAnswers(newAnswers);
 
