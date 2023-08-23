@@ -22,6 +22,7 @@ console.log(props.currentPage)
           borderRadius : "7px"
         }}
       />
+
     </div>
 
     <div className="pages">
