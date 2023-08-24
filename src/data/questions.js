@@ -7,6 +7,7 @@ const questions = [
         correctAnswer: 0,
       },
       
+
       {
         id: 2,
         question: '2. who are you',
