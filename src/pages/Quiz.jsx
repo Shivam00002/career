@@ -17,6 +17,7 @@ const Quiz = () => {
     }
   }, []);
 
+
   const handleAnswerSelect = (questionId, optionIndex) => {
     // Remove previously selected answer for the same question
     const updatedAnswers = selectedAnswers.filter(
