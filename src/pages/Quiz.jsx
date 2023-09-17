@@ -10,6 +10,7 @@ const Quiz = () => {
 
 
 
+
   useEffect(() => {
     // Retrieve the selected answers from session storage
     const storedAnswers = sessionStorage.getItem("selectedAnswers");
