@@ -8,7 +8,6 @@ console.log(props.currentPage)
 
   return (
 
- 
     <div id="prog" > 
     <div >
       <div
