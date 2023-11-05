@@ -9,10 +9,6 @@ const Quiz = () => {
   const [progress, setProgress] = useState(0);
 
 
-
-
-
-
   useEffect(() => {
     // Retrieve the selected answers from session storage
     const storedAnswers = sessionStorage.getItem("selectedAnswers");
