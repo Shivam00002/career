@@ -5,7 +5,6 @@ export const ProgressBar = (props) => {
   //const [currentPage] = progress;
 console.log(props.currentPage)
   
-
   return (
 
     <div id="prog" > 
