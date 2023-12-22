@@ -30,5 +30,4 @@ console.log(props.currentPage)
   );
 };
 
-
 export default ProgressBar;
