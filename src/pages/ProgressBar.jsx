@@ -20,6 +20,7 @@ console.log(props.currentPage)
         }}
       />
 
+
     </div>
 
     <div className="pages">
