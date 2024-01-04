@@ -25,8 +25,6 @@ console.log(props.currentPage)
     <div className="pages">
     {`Page ${props.currentPage} Off ${props.totalPages}`}
     </div>
-
-
     </div>
   );
 };
