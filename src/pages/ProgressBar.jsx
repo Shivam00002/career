@@ -21,9 +21,7 @@ console.log(props.currentPage)
       />
 
     </div>
-
-
-    <div className="pages">
+<div className="pages">
     {`Page ${props.currentPage} Off ${props.totalPages}`}
     </div>
     </div>
